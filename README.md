@@ -1,4 +1,4 @@
-# Agent Runner
+# Agent Runner Pro
 
 - Originally made by Oleksii Bondarenko.
 - Enhanced by Yehor Smoliakov with ideas from [this article](https://ai.gopubby.com/harness-engineering-what-every-ai-engineer-needs-to-know-in-2026-0ab649e5686a).
@@ -10,6 +10,16 @@ verifies the resulting diff, runs quality gates, syncs completed checklist items
 back to Markdown, and creates local commits.
 
 The runner is designed for local development workflows. It never pushes changes.
+
+
+## Key changes from the original version
+
+- Added backward-compatible `harness.controls` and per-scope `verificationEvidence` normalization in `actions/plan/`.
+- Scope context now includes harness controls, root/nearby `AGENTS.md` instructions, and explicit doer/judge boundaries.
+- Plan, scope, scope-review, and plan-review templates now reinforce the 2x2 harness-control model and stricter verification expectations.
+- Codex runs now append local harness metrics to `.agent/<slug>/harness-metrics.jsonl`.
+- Scope review parses and stores verification evidence.
+- README documents harness metrics and decay review.
 
 ## Requirements
 

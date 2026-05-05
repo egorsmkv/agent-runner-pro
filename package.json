@@ -1,0 +1,18 @@
+{
+  "name": "agent-runner",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent": "node index.mjs",
+    "build": "node --check index.mjs && find actions commands utils -name '*.mjs' -print0 | xargs -0 -n1 node --check",
+    "start": "node server/index.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.5"
+  }
+}

@@ -1,6 +1,7 @@
 # Agent Runner
 
-Made by Oleksii Bondarenko.
+- Originally made by Oleksii Bondarenko.
+- Enhanced by Yehor Smoliakov with ideas from [this article](https://ai.gopubby.com/harness-engineering-what-every-ai-engineer-needs-to-know-in-2026-0ab649e5686a).
 
 Agent Runner is a repo-local `yarn agent` CLI for executing Markdown PRDs with
 Codex. It converts a human-readable PRD into YAML execution state, runs scoped
